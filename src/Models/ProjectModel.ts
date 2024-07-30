@@ -10,7 +10,7 @@ class ProjectGithubModel {
 }
 class Paragraph {
     public subtitle?: string;
-    public text: string;
+    public html: string;
     public image: string;
     public imageAlt: string;
 }

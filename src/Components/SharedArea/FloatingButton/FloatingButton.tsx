@@ -1,8 +1,9 @@
 import "./FloatingButton.css";
 import { Action, Fab } from 'react-tiny-fab';
 import 'react-tiny-fab/dist/styles.css';
-import { Add, Call, Sms, WhatsApp } from "@mui/icons-material";
+import { Add, Call, Email, Sms, WhatsApp } from "@mui/icons-material";
 import { useState } from "react";
+import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
 
 export function FloatingButton(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ export function FloatingButton(): JSX.Element {
         <div className="FloatingButton">
             <Fab
                 mainButtonStyles={{ backgroundColor: "#1976D2" }}
-                style={{ bottom: 84 }}
+                style={AppComponentsStyle.floatingButtonFab}
                 icon={<div className="iconWrapper" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <Add fontSize="large" /> : <Sms sx={{ transform: "scaleX(-1)" }} />}</div>}
                 text={isOpen ? "Close" : "Contact me"}
                 event="click"
@@ -24,7 +25,7 @@ export function FloatingButton(): JSX.Element {
                     <Action
                         about="Send whatsapp message"
                         text="Whatsapp"
-                        style={{ backgroundColor: "#25D366", marginLeft: "45px" }}
+                        style={AppComponentsStyle.floatingButtonWhatsappAction}
                     >
                         <WhatsApp fontSize="large" />
                     </Action>
@@ -33,10 +34,20 @@ export function FloatingButton(): JSX.Element {
                     <Action
                         about="Make a phone call"
                         text="Call"
-                        style={{ backgroundColor: "rgb(25, 118, 210)", marginLeft: "45px" }}
+                        style={AppComponentsStyle.floatingButtonCallAction}
                         onClick={closeBtn}
                     >
                         <Call fontSize="large" />
+                    </Action>
+                </a>
+                <a href="mailto:etamar234@gmail.com" rel="noreferrer" target="_blank" onClick={closeBtn}>
+                    <Action
+                        about="Send an email"
+                        text="Email"
+                        style={AppComponentsStyle.floatingButtonEmailAction}
+                        onClick={closeBtn}
+                    >
+                        <Email fontSize="large" />
                     </Action>
                 </a>
             </Fab>

@@ -9,6 +9,7 @@ import Button from '@mui/joy/Button';
 import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import parse from 'html-react-parser';
 
 type ProjectPageTemplateProps = {
     project: ProjectModel;
@@ -44,7 +45,6 @@ export function ProjectPageTemplate(props: ProjectPageTemplateProps): JSX.Elemen
                         rel="noreferrer"
                     >
                         <Button
-                        
                             variant="outlined"
                             color="danger"
                             sx={AppComponentsStyle.projectPageBtn}
@@ -62,9 +62,9 @@ export function ProjectPageTemplate(props: ProjectPageTemplateProps): JSX.Elemen
                             <Zoom>
                                 <img src={e.image} alt={e.imageAlt} className="describe-image" />
                             </Zoom>
-                            <p className="describe-text">
-                                {e.text}
-                            </p>
+                            {parse(`<p className="describe-text">
+                                ${e.html}
+                            </p>`)}
                         </div>
                     </div>
                 )}

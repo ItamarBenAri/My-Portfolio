@@ -57,6 +57,28 @@ class AppComponentsStyle {
 
     // ----------------------------------------------------------
 
+    // Floating Button Style:
+    public static floatingButtonFab = {
+        bottom: 84 
+    };
+
+    public static floatingButtonWhatsappAction = { 
+        backgroundColor: "#25D366", 
+        marginLeft: "45px" 
+    };
+
+    public static floatingButtonCallAction = { 
+        backgroundColor: "rgb(25, 118, 210)", 
+        marginLeft: "45px" 
+    };
+    
+    public static floatingButtonEmailAction = { 
+        backgroundColor: "#fd613f", 
+        marginLeft: "45px" 
+    };
+
+    // ----------------------------------------------------------
+        
     // Footer Style:
     public static socialLink = {
         pl: 1,
