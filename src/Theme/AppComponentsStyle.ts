@@ -53,7 +53,17 @@ class AppComponentsStyle {
     // Project Page Style:
     public static projectPageBtn = {
         margin: "5px"
-    }
+    };
+
+    // ----------------------------------------------------------
+
+    // Frame Video Style:
+    public static frameVideoPlayIcon = { 
+        fontSize: "100px", 
+        color:"#ffffff",
+        border: "5px red"
+    };
+
 
     // ----------------------------------------------------------
 

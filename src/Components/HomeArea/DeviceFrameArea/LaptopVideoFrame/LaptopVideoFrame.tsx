@@ -2,7 +2,7 @@ import "./LaptopVideoFrame.css";
 import { FrameVideo } from "../FrameVideo/FrameVideo";
 
 type LaptopVideoFrameProps = {
-    videoSrc: string
+    youtubeVideoSrc: string
 }
 
 export function LaptopVideoFrame(props: LaptopVideoFrameProps): JSX.Element {
@@ -11,7 +11,7 @@ export function LaptopVideoFrame(props: LaptopVideoFrameProps): JSX.Element {
             <div className="macbook">
                 <div className="screen">
                     <div className="viewport">
-                        <FrameVideo videoSrc={props.videoSrc} />
+                        <FrameVideo youtubeVideoSrc={props.youtubeVideoSrc} />
                     </div>
                 </div>
                 <div className="base"></div>

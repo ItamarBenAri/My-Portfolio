@@ -2,7 +2,7 @@ import "./MobileVideoFrame.css";
 import { FrameVideo } from "../FrameVideo/FrameVideo";
 
 type MobileVideoFrameProps = {
-    videoSrc: string
+    youtubeVideoSrc: string
 }
 
 export function MobileVideoFrame(props: MobileVideoFrameProps): JSX.Element {
@@ -13,7 +13,7 @@ export function MobileVideoFrame(props: MobileVideoFrameProps): JSX.Element {
                     <div className="container-outer">
                         <div className="container-inner">
                             <div className="screen">
-                                <FrameVideo videoSrc={props.videoSrc} />
+                                <FrameVideo youtubeVideoSrc={props.youtubeVideoSrc} />
                             </div>
                         </div>
                     </div>

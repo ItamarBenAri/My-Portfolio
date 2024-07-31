@@ -1,47 +1,37 @@
-import { Pause, PlayArrow } from "@mui/icons-material";
-import { useState, useRef } from "react";
+import { PlayCircleRounded } from "@mui/icons-material";
+import { useState } from "react";
 import "./FrameVideo.css";
+import ReactPlayer from "react-player";
+import AppComponentsStyle from "../../../../Theme/AppComponentsStyle";
+
 type FrameVideoProps = {
-    videoSrc: string
+    youtubeVideoSrc: string
 }
 export function FrameVideo(props: FrameVideoProps): JSX.Element {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [showBubble, setShowBubble] = useState(false);
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
 
-    const handlePlayPause = () => {
-        const videoElement = videoRef.current;
-        if (videoElement) {
-            if (videoElement.paused) {
-                videoElement.play();
-                setIsPlaying(true);
-                setShowBubble(true);
-                setTimeout(() => setShowBubble(false), 1000);
-            } else {
-                videoElement.pause();
-                setIsPlaying(false);
-                setShowBubble(true);
-                setTimeout(() => setShowBubble(false), 1000);
-            }
-        }
+    const loadingVideoFailed = () => {
+        setLoading(false);
+        setError(true);
     };
+
     return (
         <div className="FrameVideo">
-            <video
-                ref={videoRef}
-                controls={false}
-                onClick={handlePlayPause}
-                playsInline
-                className="video"
-            >
-                <source src={props.videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            {showBubble && (
-                <div className="play-pause-bubble">
-                    {isPlaying ? <Pause /> : <PlayArrow />}
-                </div>
-            )}
+            {loading && !error && <div className="youtube-loading">Loading...</div>}
+            {error && <div className="youtube-error">Failed to load video</div>}
+            <ReactPlayer
+                url={props.youtubeVideoSrc}
+                height="100%"
+                width="100%"
+                playing={true}
+                playsinline={true}
+                light={true}
+                playIcon={<PlayCircleRounded sx={AppComponentsStyle.frameVideoPlayIcon} />}
+                onClickPreview={() => setLoading(true)}
+                onError={loadingVideoFailed}
+                onReady={() => setLoading(false)}
+            />
         </div>
     );
 }

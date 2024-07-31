@@ -31,7 +31,7 @@
     content: "";
     display: block;
     /* for aspect ratio ~67:100 */
-    padding-top: 67%;
+    padding-top: 60%;
 }
 
 .LaptopVideoFrame .screen:after {
