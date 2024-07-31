@@ -10,6 +10,7 @@ import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import parse from 'html-react-parser';
+import { appServices } from "../../../Services/AppServices";
 
 type ProjectPageTemplateProps = {
     project: ProjectModel;
@@ -57,10 +58,10 @@ export function ProjectPageTemplate(props: ProjectPageTemplateProps): JSX.Elemen
             <div className="content">
                 {props.project.paragraphs.map((e, i) =>
                     <div key={i}>
-                        {i !== 0 && <h2 className="subtitle" data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}>{e.subtitle}</h2>}
-                        <div className={`describe-section ${i % 2 === 0 ? "even" : "odd"}`} data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}>
+                        {i !== 0 && <h2 className="subtitle" data-aos={appServices.isEven(i) ? "fade-right" : "fade-left"}>{e.subtitle}</h2>}
+                        <div className={`describe-section ${appServices.isEven(i) ? "even" : "odd"}`} data-aos={appServices.isEven(i) ? "fade-right" : "fade-left"}>
                             <Zoom>
-                                <img src={e.image} alt={e.imageAlt} className="describe-image" />
+                                <img src={e.imageSrc} alt={e.imageAlt} className="describe-image" />
                             </Zoom>
                             {parse(`<p className="describe-text">
                                 ${e.html}

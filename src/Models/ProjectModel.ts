@@ -11,7 +11,7 @@ class ProjectGithubModel {
 class Paragraph {
     public subtitle?: string;
     public html: string;
-    public image: string;
+    public imageSrc: string;
     public imageAlt: string;
 }
 
