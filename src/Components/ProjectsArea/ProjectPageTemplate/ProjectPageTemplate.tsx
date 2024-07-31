@@ -39,7 +39,7 @@ export function ProjectPageTemplate(props: ProjectPageTemplateProps): JSX.Elemen
                         <span>Repository Link</span> &nbsp;<Code />
                     </Button>
                 </a>
-                {props.project.github.liveLink && props.project.name !== "My Portfolio" &&
+                {props.project.github.liveLink &&
                     <a
                         href={props.project.github.liveLink}
                         target="_blank"

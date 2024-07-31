@@ -286,7 +286,7 @@ export const myProjects: ProjectModel[] = [
         name: "My Portfolio",
         github: {
             repositoryLink: "https://github.com/ItamarBenAri/my-portfolio",
-            liveLink: "https://itamarbenari.github.io/my-portfolio/"
+            liveLink: "https://itamar-ben-ari.com"
         },
         projectLink: {
             link: "/portfolio/my-portfolio",
