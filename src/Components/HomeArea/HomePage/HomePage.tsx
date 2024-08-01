@@ -10,7 +10,7 @@ import { MyResumeBtn } from '../MyResumeBtn/MyResumeBtn';
 import { myIntroYoutubeUrls } from '../../../Constants/MyIntroYoutubeUrl';
 
 export function HomePage(): JSX.Element {
-    useTitle("Itamar Ben Ari | Portfolio");
+    useTitle("Itamar Ben Ari | Home");
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });

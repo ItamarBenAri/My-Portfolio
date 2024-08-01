@@ -21,7 +21,8 @@ class AppComponentsStyle {
         flexWrap: "wrap",
         boxSizing: "border-box",
         justifyContent: "space-evenly",
-        margin: "0 auto"
+        gap: "20px",
+        margin: "10px auto",
     };
 
     public static largeScreenMenu: React.CSSProperties = {
@@ -29,6 +30,7 @@ class AppComponentsStyle {
         boxSizing: "border-box",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "10px"
     };
 
     // ----------------------------------------------------------
@@ -44,8 +46,12 @@ class AppComponentsStyle {
         fontSize: "50px"
     };
 
-    public static headerLinkIcon = {
+    public static headerRouteIcon = {
         marginBottom: "-6px"
+    };
+
+    public static headerFavoriteIcon = {
+        marginLeft: "-2px"
     };
 
     // ----------------------------------------------------------

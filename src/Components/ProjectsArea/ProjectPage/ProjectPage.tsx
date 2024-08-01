@@ -7,7 +7,7 @@ export function ProjectPage(): JSX.Element {
     const params = useParams();
     const navigate = useNavigate();
     const projectLink = params.projectLink;
-    const idx = myProjects.findIndex(p => p.projectLink.link === "/portfolio/" + projectLink);
+    const idx = myProjects.findIndex(p => p.projectRoute.route === "/portfolio/" + projectLink);
     useEffect(() => {        
         if (idx === -1) navigate("/page-not-found");
     }, [idx, navigate, projectLink]);

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-class ProjectLinkModel {
-    public link: string;
+class ProjectRouteModel {
+    public route: string;
     public icon: ReactNode;
 }
 class ProjectGithubModel {
@@ -19,7 +19,8 @@ class ProjectModel {
     public id: number;
     public name: string;
     public github: ProjectGithubModel;
-    public projectLink: ProjectLinkModel;
+    public projectRoute: ProjectRouteModel;
+    public isFavorite?: boolean;
     public paragraphs: Paragraph[];
 }
 

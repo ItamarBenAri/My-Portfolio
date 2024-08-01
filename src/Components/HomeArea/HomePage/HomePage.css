@@ -1,5 +1,10 @@
 .HomePage {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+}
+
+@media (max-width: 490px) {
+    .HomePage {
+        gap: 3vh;
+    }
 }

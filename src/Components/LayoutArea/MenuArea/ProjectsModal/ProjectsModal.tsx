@@ -6,18 +6,16 @@ import ModalClose from '@mui/joy/ModalClose';
 import ModalDialog from '@mui/joy/ModalDialog';
 import DialogTitle from '@mui/joy/DialogTitle';
 import DialogContent from '@mui/joy/DialogContent';
-import { NavLink } from "react-router-dom";
-import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
 import { AccountTree, AdsClick } from '@mui/icons-material';
-import "./ProjectsLinksModal.css";
+import "./ProjectsModal.css";
 import { Divider } from '@mui/material';
-import { myProjects } from '../../../Constants/MyProjects';
+import AppComponentsStyle from '../../../../Theme/AppComponentsStyle';
+import { ProjectsMenu } from '../ProjectsMenu/ProjectsMenu';
 
-export function ProjectsLinksModal(): JSX.Element {
+export function ProjectsModal(): JSX.Element {
     const [open, setOpen] = React.useState<boolean>(false);
-    const [hoveredLink, setHoveredLink] = React.useState<string | null>(null);
     return (
-        <div className="ProjectsLinksModal">
+        <div className="ProjectsModal">
             <React.Fragment>
                 <Stack direction="row" spacing={1}>
                     <Button
@@ -34,20 +32,8 @@ export function ProjectsLinksModal(): JSX.Element {
                         <DialogTitle><AccountTree />Select Project</DialogTitle>
                         <Divider variant='middle' />
                         <DialogContent>
-                            <div style={AppComponentsStyle.modalMenu}>
-                                {myProjects.map(p => (
-                                    <NavLink
-                                        key={p.id}
-                                        end
-                                        to={p.projectLink.link}
-                                        style={({ isActive }) => AppComponentsStyle.getLinkStyle(isActive, hoveredLink === p.name)}
-                                        onMouseEnter={() => setHoveredLink(p.name)}
-                                        onMouseLeave={() => setHoveredLink(null)}
-                                        onClick={()=> setOpen(false)}
-                                    >
-                                        {p.projectLink.icon} {p.name}
-                                    </NavLink>
-                                ))}
+                            <div onClick={() => setOpen(false)}>
+                                <ProjectsMenu style={AppComponentsStyle.modalMenu}/>
                             </div>
                         </DialogContent>
                     </ModalDialog>
@@ -57,4 +43,4 @@ export function ProjectsLinksModal(): JSX.Element {
     );
 }
 
-export default ProjectsLinksModal;
+export default ProjectsModal;
