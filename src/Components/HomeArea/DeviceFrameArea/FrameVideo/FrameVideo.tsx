@@ -1,4 +1,4 @@
-import { PlayCircleRounded } from "@mui/icons-material";
+import { PlayCircleFilled } from "@mui/icons-material";
 import { useState } from "react";
 import "./FrameVideo.css";
 import ReactPlayer from "react-player";
@@ -27,7 +27,7 @@ export function FrameVideo(props: FrameVideoProps): JSX.Element {
                 playing={true}
                 playsinline={true}
                 light={true}
-                playIcon={<PlayCircleRounded sx={AppComponentsStyle.frameVideoPlayIcon} />}
+                playIcon={<PlayCircleFilled sx={AppComponentsStyle.frameVideoPlayIcon} />}
                 onClickPreview={() => setLoading(true)}
                 onError={loadingVideoFailed}
                 onReady={() => setLoading(false)}

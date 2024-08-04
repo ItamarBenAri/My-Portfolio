@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { MobileVideoFrame } from "../DeviceFrameArea/MobileVideoFrame/MobileVideoFrame";
 import { LaptopVideoFrame } from "../DeviceFrameArea/LaptopVideoFrame/LaptopVideoFrame";
 import { MyResumeBtn } from '../MyResumeBtn/MyResumeBtn';
-import { myIntroYoutubeUrls } from '../../../Constants/MyIntroYoutubeUrl';
+import { myIntroYoutubeUrls } from '../../../Constants/MyIntroYoutubeUrls';
 
 export function HomePage(): JSX.Element {
     useTitle("Itamar Ben Ari | Home");

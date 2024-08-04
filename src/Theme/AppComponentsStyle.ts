@@ -66,7 +66,7 @@ class AppComponentsStyle {
     // Frame Video Style:
     public static frameVideoPlayIcon = { 
         fontSize: "100px", 
-        color:"#ffffff",
+        color:"rgba(255, 255, 255, 0.9)",
         border: "5px red"
     };
 
