@@ -2,7 +2,6 @@ import "./Header.css";
 import { NavLink } from 'react-router-dom';
 import { Code } from "@mui/icons-material";
 import AppComponentsStyle from "../../../Theme/AppComponentsStyle";
-import React from "react";
 import { SmallScreenMenu } from "../MenuArea/SmallScreenMenu/SmallScreenMenu";
 import { LargeScreenMenu } from "../MenuArea/LargeScreenMenu/LargeScreenMenu";
 

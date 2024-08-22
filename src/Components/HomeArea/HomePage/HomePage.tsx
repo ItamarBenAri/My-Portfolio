@@ -1,7 +1,6 @@
 import { useMediaQuery } from 'react-responsive';
 import useTitle from "../../../Utils/UseTitle";
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import './HomePage.css';
 import { useEffect } from "react";
 import { MobileVideoFrame } from "../DeviceFrameArea/MobileVideoFrame/MobileVideoFrame";

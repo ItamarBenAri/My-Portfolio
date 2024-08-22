@@ -6,6 +6,7 @@ class AppComponentsStyle {
         margin: "5px 2px",
         cursor: "pointer",
         textAlign: "center" as "center",
+        whiteSpace: "nowrap",
         textDecoration: isActive ? "underline" : "none",
         textUnderlineOffset: isActive ? "8px" : undefined,
         color: isActive ? "#007bff" : (isHovered ? "#007bff" : "#333"),
@@ -27,10 +28,12 @@ class AppComponentsStyle {
 
     public static largeScreenMenu: React.CSSProperties = {
         display: "flex",
-        boxSizing: "border-box",
+        flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "10px"
+        boxSizing: "border-box",
+        marginBottom: "10px",
+        gap: "30px"
     };
 
     // ----------------------------------------------------------

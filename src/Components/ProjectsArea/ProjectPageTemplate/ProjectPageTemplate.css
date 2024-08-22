@@ -26,7 +26,7 @@
     border-radius: 2px;
 }
 
-.ProjectPageTemplate .githubButtons {
+.ProjectPageTemplate .linksButtons {
     margin-bottom: 10px;
 }
 
@@ -49,20 +49,6 @@
 .ProjectPageTemplate .describe-section.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.ProjectPageTemplate .describe-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.ProjectPageTemplate .describe-image:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .ProjectPageTemplate .subtitle {
@@ -93,23 +79,34 @@
     margin: 0 20px;
 }
 
+.ProjectPageTemplate .bold-text {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ProjectPageTemplate .special-text {
+    animation: colorShift 1.2s ease-in-out infinite;
+}
+
+.ProjectPageTemplate .under-construction {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (min-width: 768px) {
     .ProjectPageTemplate .describe-section {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .ProjectPageTemplate .describe-section.even {
         flex-direction: row-reverse;
     }
-    
+
     .ProjectPageTemplate .describe-text {
         width: 45%;
-    }
-    
-    .ProjectPageTemplate .describe-image {
-        width: 100%;
-        margin: 20px 0;
     }
 }
 
@@ -117,31 +114,33 @@
     .ProjectPageTemplate .title {
         font-size: 2rem;
     }
-    
+
     .ProjectPageTemplate .subtitle {
         font-size: 1.5rem;
     }
-    
+
     .ProjectPageTemplate .describe-text {
         font-size: 1rem;
     }
-    
+
     .ProjectPageTemplate .describe-section {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .ProjectPageTemplate .describe-section.odd {
         flex-direction: column-reverse;
     }
+}
 
-    .ProjectPageTemplate .describe-image {
-        width: 100%;
-        margin: 20px 0;
+@media (min-width: 1000px) {
+    .ProjectPageTemplate .under-construction {
+        margin-top: 100px;
     }
 }
 
-.ProjectPageTemplate .bold-text {
-    font-weight: bold;
-    text-decoration: none;
+@keyframes colorShift {
+    0% { color: #2c3e50; }
+    50% { color: #ff6600; }
+    100% { color: #2c3e50; }
 }

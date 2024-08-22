@@ -1,7 +1,7 @@
-import ProjectPageTemplate from "../ProjectPageTemplate/ProjectPageTemplate";
 import { useNavigate, useParams } from "react-router-dom";
 import { myProjects } from "../../../Constants/MyProjects";
 import { useEffect } from "react";
+import { ProjectPageTemplate } from "../ProjectPageTemplate/ProjectPageTemplate";
 
 export function ProjectPage(): JSX.Element {
     const params = useParams();

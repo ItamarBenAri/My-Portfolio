@@ -24,7 +24,7 @@ export function FloatingButton(): JSX.Element {
                 <a href="https://wa.me/548806891?text=Hello!+Contact+me+please." rel="noreferrer" target="_blank" onClick={closeBtn}>
                     <Action
                         about="Send whatsapp message"
-                        text="Whatsapp"
+                        title="Whatsapp"
                         style={AppComponentsStyle.floatingButtonWhatsappAction}
                     >
                         <WhatsApp fontSize="large" />
@@ -33,7 +33,7 @@ export function FloatingButton(): JSX.Element {
                 <a href="tel:054-880-6891" rel="noreferrer" target="_blank" onClick={closeBtn}>
                     <Action
                         about="Make a phone call"
-                        text="Call"
+                        title="Call"
                         style={AppComponentsStyle.floatingButtonCallAction}
                         onClick={closeBtn}
                     >
@@ -43,7 +43,7 @@ export function FloatingButton(): JSX.Element {
                 <a href="mailto:etamar234@gmail.com" rel="noreferrer" target="_blank" onClick={closeBtn}>
                     <Action
                         about="Send an email"
-                        text="Email"
+                        title="Email"
                         style={AppComponentsStyle.floatingButtonEmailAction}
                         onClick={closeBtn}
                     >

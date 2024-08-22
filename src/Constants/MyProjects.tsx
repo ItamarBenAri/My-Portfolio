@@ -1,235 +1,131 @@
 import ProjectModel from "../Models/ProjectModel";
-import { AccessAlarm, Apps, AudioFile, CurrencyBitcoin, FormatListBulleted, Houseboat, Spa, Thunderstorm } from "@mui/icons-material";
+import { AccessAlarm, Apps, AudioFile, BrowserUpdated, CurrencyBitcoin, FormatListBulleted, Houseboat, Spa, Thunderstorm, TipsAndUpdates } from "@mui/icons-material";
 import AppComponentsStyle from "../Theme/AppComponentsStyle";
-import { massageArchitectureSrc, massageCardsSrc, massageConstantsSrc, massageContactUsSrc, massageCopyrightsSrc, massageGitSrc, massageIntroSrc, massageModelsSrc, massageSecretVarsSrc, massageTextFieldSrc, massageThemeSrc, massageValidationCodeSrc, myPortfolioArchitectureSrc, myPortfolioDataSrc, myPortfolioHomePageSrc, myPortfolioIntroSrc, myPortfolioModelSrc, myPortfolioProjectPageSrc, onlineCryptoCurrenciesCanvasJSChartSrc, onlineCryptoCurrenciesCoinsSrc, onlineCryptoCurrenciesGetFromApiSrc, onlineCryptoCurrenciesHtmlSrc, onlineCryptoCurrenciesIntroSrc, onlineCryptoCurrenciesModalSrc, onlineCryptoCurrenciesMoreInfoSrc, onlineCryptoCurrenciesParallaxSrc, onlineCryptoCurrenciesSearchSrc, onlineMusicAlarmAppStoreSrc, onlineMusicAlarmIntroSrc, onlineMusicAlarmRegexSrc, onlineMusicAlarmValidationSrc, onlineMusicAlarmYoutubeSrc, singerPortfolioCodeSrc, singerPortfolioDeviceSrc, singerPortfolioIntroSrc, todoBoardArchiveSrc, todoBoardCodeOrganizeSrc, todoBoardErrorSrc, todoBoardIntroSrc, todoBoardPastDateCodeSrc, vacationsBackAbstractSrc, vacationsBackAppFileSrc, vacationsBackControllerSrc, vacationsBackDALSrc, vacationsBackEnumSrc, vacationsBackEnvSrc, vacationsBackErrorsLogSrc, vacationsBackJoiSrc, vacationsBackJwtSrc, vacationsBackLayersModelSrc, vacationsBackMiddlewareSrc, vacationsBackNodemonSrc, vacationsBackPostmanSrc, vacationsBackServiceSrc, vacationsBackTestsSrc, vacationsDBSrc, vacationsDockerFilesSrc, vacationsDockerSrc, vacationsFrontAddSrc, vacationsFrontAdminViewSrc, vacationsFrontInterceptorsSrc, vacationsFrontIntroSrc, vacationsFrontModelsSrc, vacationsFrontPaginationSrc, vacationsFrontReportSrc, vacationsFrontSignInSrc, vacationsFrontSignUpSrc, vacationsFrontSkeletonSrc, vacationsFrontThemeSrc, vacationsFrontUrlsConfigSrc, weatherNowIIFESrc, weatherNowMainFunctionSrc, weatherNowSearchErrorSrc, weatherNowWeatherSrc } from "./MyProjectsImagesImports";
+import { massageArchitectureSrc, massageCardsSrc, massageConstantsSrc, massageContactUsSrc, massageCopyrightsSrc, massageGitSrc, massageIntroSrc, massageModelsSrc, massageSecretVarsSrc, massageTextFieldSrc, massageThemeSrc, massageValidationCodeSrc, metadataFetcherBackendAppConfigSrc, metadataFetcherBackendAppFileSrc, metadataFetcherBackendTestsSrc, metadataFetcherCsrfMiddlewareSrc, metadataFetcherDataControllerSrc, metadataFetcherDynamicallyJsonSrc, metadataFetcherFrontendAppConfigSrc, metadataFetcherFrontendCsrfServiceSrc, metadataFetcherFrontendMetadataServiceSrc, metadataFetcherFrontendTestsSrc, metadataFetcherFrontValidationSrc, metadataFetcherIntroSrc, metadataFetcherRenderSrc, metadataFetcherResultsSrc, metadataFetcherUrlsMiddlewareSrc, myPortfolioArchitectureSrc, myPortfolioDataSrc, myPortfolioHomePageSrc, myPortfolioIntroSrc, myPortfolioModelSrc, myPortfolioProjectPageSrc, onlineCryptoCurrenciesCanvasJSChartSrc, onlineCryptoCurrenciesCoinsSrc, onlineCryptoCurrenciesGetFromApiSrc, onlineCryptoCurrenciesHtmlSrc, onlineCryptoCurrenciesIntroSrc, onlineCryptoCurrenciesModalSrc, onlineCryptoCurrenciesMoreInfoSrc, onlineCryptoCurrenciesParallaxSrc, onlineCryptoCurrenciesSearchSrc, onlineMusicAlarmAppStoreSrc, onlineMusicAlarmIntroSrc, onlineMusicAlarmRegexSrc, onlineMusicAlarmValidationSrc, onlineMusicAlarmYoutubeSrc, singerPortfolioCodeSrc, singerPortfolioDeviceSrc, singerPortfolioIntroSrc, todoBoardArchiveSrc, todoBoardCodeOrganizeSrc, todoBoardErrorSrc, todoBoardIntroSrc, todoBoardPastDateCodeSrc, vacationsBackAbstractSrc, vacationsBackAppFileSrc, vacationsBackControllerSrc, vacationsBackDALSrc, vacationsBackEnumSrc, vacationsBackEnvSrc, vacationsBackErrorsLogSrc, vacationsBackJoiSrc, vacationsBackJwtSrc, vacationsBackLayersModelSrc, vacationsBackMiddlewareSrc, vacationsBackNodemonSrc, vacationsBackPostmanSrc, vacationsBackServiceSrc, vacationsBackTestsSrc, vacationsDBSrc, vacationsDockerFilesSrc, vacationsDockerSrc, vacationsFrontAddSrc, vacationsFrontAdminViewSrc, vacationsFrontInterceptorsSrc, vacationsFrontIntroSrc, vacationsFrontModelsSrc, vacationsFrontPaginationSrc, vacationsFrontReportSrc, vacationsFrontSignInSrc, vacationsFrontSignUpSrc, vacationsFrontSkeletonSrc, vacationsFrontThemeSrc, vacationsFrontUrlsConfigSrc, weatherNowIIFESrc, weatherNowMainFunctionSrc, weatherNowSearchErrorSrc, weatherNowWeatherSrc } from "./MyProjectsImagesImports";
 
 export const myProjects: ProjectModel[] = [
-
     {
         id: 1,
-        name: "Massage",
-        github: {
-            repositoryLink: "https://github.com/ItamarBenAri/Massage",
-            liveLink: "https://itamarbenari.github.io/Massage/"
+        name: "Metadata Fetcher",
+        links: {
+            repositoryLink: "https://github.com/ItamarBenAri/Metadata-Fetcher",
+            liveLink: "https://metadata-fetcher-frontend.onrender.com"
         },
         projectRoute: {
-            route: "/portfolio/massage",
-            icon: <Spa sx={AppComponentsStyle.headerRouteIcon} />
-        },
-        paragraphs: [
-            {
-                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Massage/' target='_blank' rel='noreferrer'>This</a> is one of the <span className='bold-text'>frontend</span> projects I truly enjoyed working on. Built with <a className='bold-text' href='https://react.dev/' target='_blank' rel='noreferrer'>React</a>, it includes a <span className='bold-text'>.env</span> file for configuration. The project was for a client who needed a <span className='bold-text'>Hebrew website</span> for <span className='bold-text'>various massage services</span>, with a <span className='bold-text'>contact form</span> and <span className='bold-text'>accessibility features</span>. The website is mainly designed with <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> for enhanced <span className='bold-text'>responsiveness</span> and <span className='bold-text'>accessibility</span>, and it’s <span className='bold-text'>optimized</span> for both desktop and mobile devices.",
-                "imageSrc": massageIntroSrc,
-                "imageAlt": "Screenshot of Massage Website"
-            },
-            {
-                "subtitle": "Architecture",
-                "html": "One of the key lessons I learned from this project was how to build its <a className='bold-text' href='https://star-knowledge.com/blog/web-application-architecture-types-components-models/#:~:text=Web%20application%20architecture%20is%20the,the%20data%20to%20the%20user.' target='_blank' rel='noreferrer'>architecture</a> correctly. To <span className='bold-text'>optimize long-term maintenance</span> and <span className='bold-text'>improvement</span>, I placed each component in its own folder and sometimes further divided these into additional files, as shown in the image. A well-planned project is more enjoyable and <span className='bold-text'>easier to maintain😁</span>.",
-                "imageSrc": massageArchitectureSrc,
-                "imageAlt": "Describe project architecture"
-            },
-            {
-                "subtitle": "Constants",
-                "html": "All medical treatment information on the site is stored in a <span className='bold-text'>constants folder</span> within the src directory, and is exported for use elsewhere in the application. This setup makes it <span className='bold-text'>easier to maintain the treatment data</span> and simulates data coming from a <a className='bold-text' href='https://docs.duendesoftware.com/identityserver/v7/bff/apis/remote/#:~:text=A%20Remote%20API%20is%20an,requests%20to%20remote%20APIs%20directly.' target='_blank' rel='noreferrer'>remote API</a>.",
-                "imageSrc": massageConstantsSrc,
-                "imageAlt": "Code of therapies data"
-            },
-            {
-                "subtitle": "Models",
-                "html": "The <a className='bold-text' href='https://www.typescriptlang.org/docs/handbook/classes.html' target='_blank' rel='noreferrer'>models</a> shown in the image were created to <span className='bold-text'>safeguard against incorrect or erroneous data during code maintenance</span>. Defining these <span className='bold-text'>models</span> provides <span className='bold-text'>protection against unexpected errors</span>, making it easier to trace their origins and ensuring more <span className='bold-text'>robust</span> and <span className='bold-text'>reliable code management</span>💪.",
-                "imageSrc": massageModelsSrc,
-                "imageAlt": "Code of MassageModel class and TherapyModel class"
-            },
-            {
-                "subtitle": "Theme",
-                "html": "The AppComponentsStyle class was created to separate design elements from the <a className='bold-text' href='https://legacy.reactjs.org/docs/introducing-jsx.html' target='_blank' rel='noreferrer'>JSX</a> component files. Since <span className='bold-text'>CSS</span> files don't support styling <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> components, I developed a <a className='bold-text' href='https://mui.com/customization/theming/' target='_blank' rel='noreferrer'>theme</a> to handle this. This approach keeps <span className='bold-text'>styling</span> objects separate from <a className='bold-text' href='https://legacy.reactjs.org/docs/introducing-jsx.html' target='_blank' rel='noreferrer'>JSX</a> files, creating <span className='bold-text'>static design objects</span> at the application level, accessible throughout the project. This approach ensures a <span className='bold-text'>cleaner</span>, more <span className='bold-text'>maintainable codebase✨</span>.",
-                "imageSrc": massageThemeSrc,
-                "imageAlt": "Code of Theme class"
-            },
-            {
-                "subtitle": "Secret Variables",
-                "html": "🔐 The following code, located in the <span className='bold-text'>Utils</span> folder within src, centralizes <span className='bold-text'>environment variables</span>, enhancing <span className='bold-text'>maintainability</span>, <span className='bold-text'>security</span>, and <span className='bold-text'>organization</span>. By encapsulating keys for <a className='bold-text' href='https://www.google.com/recaptcha/about/' target='_blank' rel='noreferrer'>reCAPTCHA</a> and <a className='bold-text' href='https://www.emailjs.com/' target='_blank' rel='noreferrer'>EmailJS</a> in an AppConfig class, it ensures these <span className='bold-text'>sensitive values</span> are easily managed and accessed throughout the application while keeping them <span className='bold-text'>secure</span> by not hardcoding them directly. This approach promotes a <span className='bold-text'>cleaner</span>, more <span className='bold-text'>secure codebase</span>.",
-                "imageSrc": massageSecretVarsSrc,
-                "imageAlt": "Code of secret variables in AppConfig file"
-            },
-            {
-                "subtitle": "Git",
-                "html": "This is the first project I deployed to <a className='bold-text' href='https://pages.github.com/' target='_blank' rel='noreferrer'>GitHub Pages</a> using <span className='bold-text'>secret variables</span>, a new area I explored related to <a className='bold-text' href='https://aws.amazon.com/devops/what-is-devops/#:~:text=DevOps%20is%20the%20combination%20of,development%20and%20infrastructure%20management%20processes.' target='_blank' rel='noreferrer'>DevOps</a>. After learning and several trial-and-error attempts, I <span className='bold-text'>enjoyed</span> overcoming the challenge, <span className='bold-text'>discovering</span> new things, and <span className='bold-text'>securely deploying</span> the website to <a className='bold-text' href='https://pages.github.com/' target='_blank' rel='noreferrer'>GitHub Pages</a>.",
-                "imageSrc": massageGitSrc,
-                "imageAlt": "Code of yml file file"
-            },
-            {
-                "subtitle": "Cards",
-                "html": "The massage treatment <span className='bold-text'>cards</span> are <span className='bold-text'>dynamic</span> and <span className='bold-text'>interactive</span>. When a user hovers over them, the card flips to reveal treatment prices and a call button for contacting the therapist. The design and animations are crafted entirely with <span className='bold-text'>CSS</span> from <a className='bold-text' href='https://uiverse.io/joe-watson-sbf/little-goat-24' target='_blank' rel='noreferrer'>this website</a>, providing a <span className='bold-text'>seamless</span> and <span className='bold-text'>professional</span> user experience.",
-                "imageSrc": massageCardsSrc,
-                "imageAlt": "Screenshot of Medical Cards from Website"
-            },
-            {
-                "subtitle": "Contact Us",
-                "html": "When the <span className='bold-text'>contact form</span> is displayed, the <span className='bold-text'>submit button</span> is <span className='bold-text'>disabled</span> until the user <span className='bold-text'>verifies</span> they are human via <a className='bold-text' href='https://www.google.com/recaptcha/about/' target='_blank' rel='noreferrer'>Google's reCAPTCHA</a>. Even after <span className='bold-text'>verification</span>, if the user tries to submit the form with incorrect details, the form will not submit. Instead, an <span className='bold-text'>error message</span> will be shown, and focus will be <span className='bold-text'>directed</span> to the field with the error. This <span className='bold-text'>functionality</span> is supported by the <a className='bold-text' href='https://react-hook-form.com/' target='_blank' rel='noreferrer'>react-hook-form</a> library.",
-                "imageSrc": massageContactUsSrc,
-                "imageAlt": "Screenshot of Contact Us form from Website"
-            },
-            {
-                "subtitle": "Contact Us Validation Code",
-                "html": "All <span className='bold-text'>validation objects</span>, including <a className='bold-text' href='https://regexr.com/' target='_blank' rel='noreferrer'>regex</a> for <span className='bold-text'>text field</span>, are contained within a single class. These <span className='bold-text'>objects</span> are <span className='bold-text'>static</span>, meaning they <span className='bold-text'>load only once at the project level</span>, ensuring <span className='bold-text'>efficient</span> and <span className='bold-text'>consistent validation</span> across the application.",
-                "imageSrc": massageValidationCodeSrc,
-                "imageAlt": "Code of validation class"
-            },
-            {
-                "subtitle": "Text Field",
-                "html": "The files form an efficient and maintainable <span className='bold-text'>contact form</span> using <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> components and <a className='bold-text' href='https://react-hook-form.com/' target='_blank' rel='noreferrer'>React Hook Form</a>. The ContactUsTextField component wraps <a className='bold-text' href='https://mui.com/material-ui/react-text-field/' target='_blank' rel='noreferrer'>MUI's TextField</a>, adding <span className='bold-text'>validation logic</span>. This separation makes the <span className='bold-text'>code modular</span> and <span className='bold-text'>easier to maintain</span>, with validation and styling handled outside the main component logic. The ContactUsForm component uses <a className='bold-text' href='https://react-hook-form.com/docs/formprovider' target='_blank' rel='noreferrer'>FormProvider</a> for <span className='bold-text'>global form state</span> management. Separating the <a className='bold-text' href='https://mui.com/material-ui/react-text-field/' target='_blank' rel='noreferrer'>TextField</a> and using <a className='bold-text' href='https://react-hook-form.com/docs/formprovider' target='_blank' rel='noreferrer'>FormProvider</a> ensures <span className='bold-text'>clean</span>, <span className='bold-text'>maintainable</span>, and <span className='bold-text'>reusable code</span>.",
-                "imageSrc": massageTextFieldSrc,
-                "imageAlt": "Code of Text Field components"
-            },
-            {
-                "subtitle": "Copyrights",
-                "html": "©️ The <span className='bold-text'>copyright</span> section is fully styled using <a className='bold-text' href='https://mui.com/material-ui/getting-started/templates/sticky-footer/' target='_blank' rel='noreferrer'>MUI</a>, ensuring it is <span className='bold-text'>responsive</span> and <span className='bold-text'>accessible</span>. As shown, there's also an <span className='bold-text'>upward arrow button</span> that, when clicked, <span className='bold-text'>scrolls the page to the top</span> for <span className='bold-text'>user convenience</span>.",
-                "imageSrc": massageCopyrightsSrc,
-                "imageAlt": "Screenshots of responsive copyrights section from Website"
-            },
-        ]
-    },
-    {
-        id: 2,
-        name: "Crypto Currencies",
-        github: {
-            repositoryLink: "https://github.com/ItamarBenAri/Online-Crypto-Currencies",
-            liveLink: "https://itamarbenari.github.io/Online-Crypto-Currencies/"
-        },
-        projectRoute: {
-            route: "/portfolio/online-crypto-currencies",
-            icon: <CurrencyBitcoin sx={AppComponentsStyle.headerRouteIcon} />
-        },
-        paragraphs: [
-            {
-                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Online-Crypto-Currencies/' target='_blank' rel='noreferrer'>This project</a> is one of my early works, built with <a className='bold-text' href='https://medium.com/@supraja_miryala/es6-vs-native-javascript-939533a4e1b2#:~:text=%E2%80%9CNative%E2%80%9D%20in%20JavaScript%20typically%20refers%20to%20features%20or%20functionalities%20that,provided%20by%20the%20language%20itself.' target='_blank' rel='noreferrer'>native JavaScript</a>. It <span className='bold-text'>dynamically injects</span> elements into and uses <a className='bold-text' href='https://getbootstrap.com/' target='_blank' rel='noreferrer'>Bootstrap</a> for enhanced <span className='bold-text'>responsiveness</span> and <span className='bold-text'>accessibility</span>. The project displays <span className='bold-text'>popular cryptocurrencies</span> and tracks their <span className='bold-text'>real-time prices</span> using <a className='bold-text' href='https://canvasjs.com/' target='_blank' rel='noreferrer'>CanvasJS</a> Chart. A key focus was on <span className='bold-text'>proper function decomposition</span>, ensuring <span className='bold-text'>each function performs a single task</span>.",
-                "imageSrc": onlineCryptoCurrenciesIntroSrc,
-                "imageAlt": "Screenshot of Online Crypto Currencies Website"
-            },
-            {
-                "subtitle": "HTML",
-                "html": "As seen in the image, the <span className='bold-text'>HTML</span> contains only three elements. In line with the project goals, the entire site is <span className='bold-text'>dynamically rendered</span> by the <span className='bold-text'>JavaScript</span> file, not through <span className='bold-text'>static HTML</span>.",
-                "imageSrc": onlineCryptoCurrenciesHtmlSrc,
-                "imageAlt": "Screenshot of the HTML"
-            },
-            {
-                "subtitle": "Coins",
-                "html": "🪙 Clicking on HOME in the menu <span className='bold-text'>fetches</span> cryptocurrencies from an <a className='bold-text' href='https://en.wikipedia.org/wiki/API' target='_blank' rel='noreferrer'>API</a> and displays them to the user. The user can select up to 5 coins to track their <span className='bold-text'>real-time prices</span> on the Reports page. Clicking on More Info shows the coin's price in USD, EUR, and ILS.",
-                "imageSrc": onlineCryptoCurrenciesCoinsSrc,
-                "imageAlt": "Website coins"
-            },
-            {
-                "subtitle": "Get From Api",
-                "html": "This was my first time <span className='bold-text'>fetching data</span> from a specific server. I learned the importance of using <span className='bold-text'>await</span> and <span className='bold-text'>incorporating try-catch</span> for handling <span className='bold-text'>asynchronous operations</span>. Additionally, I gained insights into how <span className='bold-text'>JavaScript</span> manages the <a className='bold-text' href='http://latentflip.com/loupe/?code=!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D' target='_blank' rel='noreferrer'>Call Stack</a>.",
-                "imageSrc": onlineCryptoCurrenciesGetFromApiSrc,
-                "imageAlt": "Code of get api"
-            },
-            {
-                "subtitle": "Modal",
-                "html": "When the user selects more than five currencies, a modal pops up asking which currency to remove to add the sixth one. If the user clicks the 'X' or the 'Done' button, the sixth currency will not be added.",
-                "imageSrc": onlineCryptoCurrenciesModalSrc,
-                "imageAlt": "Website modal"
-            },
-            {
-                "subtitle": "CanvasJS Chart",
-                "html": "The <span className='bold-text'>responsive</span> <a className='bold-text' href='https://canvasjs.com/' target='_blank' rel='noreferrer'>CanvasJS</a> chart displays cryptocurrency prices in <span className='bold-text'>real-time</span>, updated every second. This feature ensures users have the most current data on their chosen currencies. By presenting prices in USD, the chart offers a <span className='bold-text'>clear</span> and <span className='bold-text'>accessible</span> way to monitor market trends. This <span className='bold-text'>dynamic</span> approach highlights the project's focus on <span className='bold-text'>real-time data visualization</span> and <span className='bold-text'>user engagement</span>.",
-                "imageSrc": onlineCryptoCurrenciesCanvasJSChartSrc,
-                "imageAlt": "Website CanvasJS Chart"
-            },
-            {
-                "subtitle": "More Info",
-                "html": "To <span className='bold-text'>optimize</span> the website and <span className='bold-text'>fetch data</span> from the server only when necessary, a function runs when the user clicks 'More Info'. This function checks if the currency data exists in <span className='bold-text'>localStorage</span>. If it does, the data is displayed immediately. If not, a <span className='bold-text'>server request</span> is made, and the data is <span className='bold-text'>stored in localStorage</span> for 2 minutes to <span className='bold-text'>reduce unnecessary server requests</span> and enhance the <span className='bold-text'>user experience</span>.",
-                "imageSrc": onlineCryptoCurrenciesMoreInfoSrc,
-                "imageAlt": "Code of 'more info' function"
-            },
-            {
-                "subtitle": "Search",
-                "html": "🔍 After consulting with several developers, I decided to implement a <a className='bold-text' href='https://medium.com/@AlexanderObregon/how-to-build-a-dynamic-search-feature-with-javascript-filters-464b97038be1' target='_blank' rel='noreferrer'>dynamic search feature</a>. This means that as users type or delete characters, the matching currencies are <span className='bold-text'>displayed in real-time</span>, unlike traditional search methods that require pressing enter or clicking a button. This approach enhances the <span className='bold-text'>user experience</span> by providing instant feedback.",
-                "imageSrc": onlineCryptoCurrenciesSearchSrc,
-                "imageAlt": "Website search example"
-            },
-            {
-                "subtitle": "Parallax",
-                "html": "The website <span className='bold-text'>background features</span> a subtle <a className='bold-text' href='https://webflow.com/blog/parallax-scrolling' target='_blank' rel='noreferrer'>parallax</a> effect, enhancing the <span className='bold-text'>visual appeal</span> and <span className='bold-text'>user experience</span>. The code of the <a className='bold-text' href='https://webflow.com/blog/parallax-scrolling' target='_blank' rel='noreferrer'>parallax</a> adjusts the <span className='bold-text'>background position</span> based on the <span className='bold-text'>scroll speed</span>, creating a <a className='bold-text' href='https://gsap.com/community/forums/topic/37236-how-to-achieve-smooth-parallax-effect-with-scrolltrigger-and-snap-scroll/' target='_blank' rel='noreferrer'>smooth parallax scrolling effect</a>.",
-                "imageSrc": onlineCryptoCurrenciesParallaxSrc,
-                "imageAlt": "Code of the parallax"
-            },
-        ]
-    },
-    {
-        id: 3,
-        name: "Weather Now",
-        github: {
-            repositoryLink: "https://github.com/ItamarBenAri/Weather-Now",
-            liveLink: "https://itamarbenari.github.io/Weather-Now/"
-        },
-        projectRoute: {
-            route: "/portfolio/weather-now",
-            icon: <Thunderstorm sx={AppComponentsStyle.headerRouteIcon} />
-        },
-        paragraphs: [
-            {
-                "html": "☁️ <a className='bold-text' href='https://itamarbenari.github.io/Weather-Now/' target='_blank' rel='noreferrer'>This</a> is one of the first projects I created to <span className='bold-text'>add value to the community</span>. It was my first time learning how to use an <a className='bold-text' href='https://www.fortinet.com/resources/cyberglossary/api-key#:~:text=API%20Keys%20Definition%20and%20Meaning,authenticate%20an%20application%20or%20user.' target='_blank' rel='noreferrer'>API key</a>. Built with <a className='bold-text' href='https://medium.com/@supraja_miryala/es6-vs-native-javascript-939533a4e1b2#:~:text=%E2%80%9CNative%E2%80%9D%20in%20JavaScript%20typically%20refers%20to%20features%20or%20functionalities%20that,provided%20by%20the%20language%20itself.' target='_blank' rel='noreferrer'>native JavaScript</a>, the Frontend project displays <span className='bold-text'>weather information</span> based on the city entered by the user. Designed with <a className='bold-text' href='https://getbootstrap.com/' target='_blank' rel='noreferrer'>Bootstrap</a>, the <span className='bold-text'>weather data</span> is provided by the <a className='bold-text' href='https://www.weatherapi.com/' target='_blank' rel='noreferrer'>Weather API</a>.",
-                "imageSrc": weatherNowWeatherSrc,
-                "imageAlt": "Screenshot of Weather Now Website"
-            },
-            {
-                "subtitle": "IIFE",
-                "html": "In this project, I learned to use <a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Glossary/IIFE' target='_blank' rel='noreferrer'>IIFE</a> (<span className='bold-text'>Immediately Invoked Function Expression</span>) and the '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode' target='_blank' rel='noreferrer'>use strict</a>' <span className='bold-text'>directive in JavaScript</span>. An <a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Glossary/IIFE' target='_blank' rel='noreferrer'>IIFE</a> helps to create a <span className='bold-text'>local scope</span> and <span className='bold-text'>avoid polluting the global namespace</span>. The '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode' target='_blank' rel='noreferrer'>use strict</a>' directive enforces <span className='bold-text'>stricter parsing</span> and <span className='bold-text'>error handling</span> in the code, making it <span className='bold-text'>more robust</span> and <span className='bold-text'>less error-prone💪</span>.",
-                "imageSrc": weatherNowIIFESrc,
-                "imageAlt": "Code of IIFE and 'use strict'"
-            },
-            {
-                "subtitle": "API",
-                "html": "🔐 Yes yes, I know it's not secure to <a className='bold-text' href='https://escape.tech/blog/how-to-secure-api-secret-keys/' target='_blank' rel='noreferrer'>expose an API key publicly</a>, and this was the first and last time I did it. My focus was on <span className='bold-text'>proper function decomposition</span>, ensuring <span className='bold-text'>each function performs a single logical task</span>, as demonstrated in the image.",
-                "imageSrc": weatherNowMainFunctionSrc,
-                "imageAlt": "Code of API fetching"
-            },
-            {
-                "subtitle": "Input Error",
-                "html": "👎 As shown in the image, when a user enters a <span className='bold-text'>non-existent city</span>, a '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400' target='_blank' rel='noreferrer'>Bad Request 400</a>' error is <span className='bold-text'>logged to the console</span>. The application then <span className='bold-text'>displays a clear message to the user</span>, informing them of the invalid input. This error handling ensures users are aware of mistakes and can correct their entries.",
-                "imageSrc": weatherNowSearchErrorSrc,
-                "imageAlt": "Screenshot from the website of error when city not found"
-            },
-        ]
-    },
-    {
-        id: 4,
-        name: "Singer Portfolio",
-        github: {
-            repositoryLink: "https://github.com/ItamarBenAri/Singer-Portfolio",
-            liveLink: "https://itamarbenari.github.io/Singer-Portfolio/"
-        },
-        projectRoute: {
-            route: "/portfolio/singer-portfolio",
-            icon: <AudioFile sx={AppComponentsStyle.headerRouteIcon} />
+            route: "/portfolio/metadata-fetcher",
+            icon: <BrowserUpdated sx={AppComponentsStyle.headerRouteIcon} />
         },
         isFavorite: true,
         paragraphs: [
             {
-                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Singer-Portfolio/' target='_blank' rel='noreferrer'>This website</a> was created for a good friend of mine, a singer-songwriter, with the <span className='bold-text'>frontend</span> developed using <a className='bold-text' href='https://react.dev/' target='_blank' rel='noreferrer'>React</a>. <span className='bold-text'>Leveraging the advancements</span> in <span className='bold-text'>AI</span> and <span className='bold-text'>chat technology</span>, I experimented with building a website primarily using <span className='bold-text'>prompts</span> fed into <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a>. The result is in front of you, and I think it turned out quite well. However, working with <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> had its challenges. It sometimes generated code that caused compilation errors, and when I tried to fix them, it often repeated the same mistakes. Ultimately, I had to roll up my sleeves, investigate the bugs, and resolve them myself🐞.",
-                "imageSrc": singerPortfolioIntroSrc,
-                "imageAlt": "Screenshot of Singer Portfolio Website"
+                "html": "📥 In this <span className='bold-text'>full-stack</span> project, I focus on <span className='bold-text'>processing data</span> from <span className='bold-text'>various APIs</span>. The website features a form where users submit at least three URLs for <span className='bold-text'>backend processing</span>. The backend <span className='bold-text'>validates</span> and <span className='bold-text'>processes each link sequentially</span> through a <a className='bold-text' href='https://www.redhat.com/en/topics/api/what-is-a-rest-api' target='_blank' rel='noreferrer'>REST API</a>, ensuring a <span className='bold-text'>seamless user experience</span>. I've implemented <a className='bold-text' href='https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html' target='_blank' rel='noreferrer'>CSRF protection</a> for added <span className='bold-text'>security</span> and <span className='bold-text'>deployed</span> the website via <a className='bold-text' href='https://render.com/' target='_blank' rel='noreferrer'>Render</a>, handling <a className='bold-text' href='https://en.wikipedia.org/wiki/DevOps' target='_blank' rel='noreferrer'>DevOps</a> tasks to prepare it for <span className='bold-text'>production</span>. <span className='special-text'>The project and all the code were written and deployed live within just three days</span>.",
+                "imageSrc": metadataFetcherIntroSrc,
+                "imageAlt": "Screenshot of Metadata Fetcher Website"
             },
             {
-                "subtitle": "Code",
-                "html": "🤖 The code written by <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> was <span className='bold-text'>quite clear</span>. Most of it was structured with <span className='bold-text'>HTML</span> and styled using <span className='bold-text'>CSS</span>. Even when multiple components had the same design but different content, it repeated them as <span className='bold-text'>HTML</span> was traditionally written. For <span className='bold-text'>animations</span>, <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> recommended the <a className='bold-text' href='https://michalsnik.github.io/aos/' target='_blank' rel='noreferrer'>AOS</a> library, which did an excellent job making the website <span className='bold-text'>look attractive</span>.",
-                "imageSrc": singerPortfolioCodeSrc,
-                "imageAlt": "html of the printing"
+                "subtitle": "Form Validation",
+                "html": "❗ I used the <a className='bold-text' href='https://react-hook-form.com/get-started' target='_blank' rel='noreferrer'>react-hook-form</a> library for <span className='bold-text'>efficient form management</span> in this project. Validations are triggered on form submission, ensuring that <span className='bold-text'>each URL is valid, starts with 'https://', contains additional characters, and isn't duplicated</span>. This <span className='bold-text'>approach streamlines</span> the user experience by <span className='bold-text'>providing real-time feedback</span> and ensures <span className='bold-text'>accurate data processing</span>.",
+                "imageSrc": metadataFetcherFrontValidationSrc,
+                "imageAlt": "Form input validation errors"
             },
             {
-                "subtitle": "Device Frame",
-                "html": "📱 When I asked <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> to create a <span className='bold-text'>frame</span> for <span className='bold-text'>videos</span> to make them look like they were displayed on a phone, it either created a <span className='bold-text'>basic black frame</span> or designs that <span className='bold-text'>looked unprofessional</span> (Maybe it's my prompts🤷‍♂️). So, I used the <a className='bold-text' href='https://www.npmjs.com/package/react-device-frameset' target='_blank' rel='noreferrer'>react-device-frameset</a> library, which offers <span className='bold-text'>attractive</span> and <span className='bold-text'>appropriate designs</span>. However, from my experience, the <span className='bold-text'>responsiveness</span> of their frames wasn't very effective.",
-                "imageSrc": singerPortfolioDeviceSrc,
-                "imageAlt": "html of the printing"
+                "subtitle": "Metadata Results",
+                "html": "When the back-end responds, I use <a className='bold-text' href='https://www.w3schools.com/react/react_useref.asp' target='_blank' rel='noreferrer'>useRef</a> to <span className='bold-text'>automatically scroll</span> the screen to the answer. Each response for a submitted URL is <span className='bold-text'>displayed instantly</span>. The table design is crafted with the <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> library, enhancing <span className='bold-text'>accessibility</span> and <span className='bold-text'>responsiveness</span>. This ensures a <span className='bold-text'>seamless user experience</span>, with <span className='bold-text'>real-time updates</span> and a <span className='bold-text'>visually appealing, adaptable interface</span>.",
+                "imageSrc": metadataFetcherResultsSrc,
+                "imageAlt": "The result from backend"
             },
+            {
+                "subtitle": "Frontend Metadata Service",
+                "html": "The <span className='bold-text'>MetadataService</span> class <span className='bold-text'>efficiently fetches metadata</span> from a list of URLs and updates the <span className='bold-text'>global state</span>. It clears existing metadata and <span className='bold-text'>processes a streamed response</span> using fetch. By leveraging <a className='bold-text' href='https://www.npmjs.com/package/jsonrepair' target='_blank' rel='noreferrer'>jsonrepair</a>, it ensures the <span className='bold-text'>JSON</span> is fixed and <span className='bold-text'>dispatched</span> to the <span className='bold-text'>global state</span>. This service integrates <span className='bold-text'>clean state management</span> with <a className='bold-text' href='https://redux.js.org/tutorials/fundamentals/part-1-overview#:~:text=Redux%20is%20a%20pattern%20and,updates%20the%20state%20in%20response./' target='_blank' rel='noreferrer'>Redux</a>, handles <span className='bold-text'>asynchronous data processing</span>, and demonstrates <span className='bold-text'>robust error handling</span> to enhance the <span className='bold-text'>user experience</span>.",
+                "imageSrc": metadataFetcherFrontendMetadataServiceSrc,
+                "imageAlt": "Screenshot of Frontend MetadataService file"
+            },
+            {
+                "subtitle": "Frontend App Config",
+                "html": "The <span className='bold-text'>ProdConfig</span> class is designed for <span className='bold-text'>production</span>, specifying <a className='bold-text' href='https://www.techtarget.com/searchapparchitecture/definition/API-endpoint' target='_blank' rel='noreferrer'>API endpoints</a> and <a className='bold-text' href='https://www.w3schools.com/tags/ref_httpmethods.asp' target='_blank' rel='noreferrer'>HTTP POST request</a> configurations. It includes URLs for <a className='bold-text' href='https://brightsec.com/blog/csrf-token/' target='_blank' rel='noreferrer'>CSRF token</a> retrieval and <span className='bold-text'>URL processing</span>. The <span className='bold-text'>fetchOptions method</span> generates <span className='bold-text'>HTTP POST options</span> with necessary <a className='bold-text' href='https://www.haproxy.com/glossary/what-is-a-request-header#:~:text=A%20request%20header%20is%20part,responses%20eventually%20reach%20their%20destinations.' target='_blank' rel='noreferrer'>headers</a>, including a <span className='bold-text'>CSRF token</span> from <a className='bold-text' href='https://en.wikipedia.org/wiki/HTTP_cookie' target='_blank' rel='noreferrer'>cookies</a>, and sends serialized URLs in the <a className='bold-text' href='https://www.linkedin.com/pulse/deciphering-expressjs-choosing-between-reqbody-url-parameters-ahmed/' target='_blank' rel='noreferrer'>request body</a>. This configuration ensures <span className='bold-text'>secure communication</span> with the <span className='bold-text'>server</span> by handling <span className='bold-text'>CSRF protection</span> and <span className='bold-text'>credentials</span> for <span className='bold-text'>production environments</span>.",
+                "imageSrc": metadataFetcherFrontendAppConfigSrc,
+                "imageAlt": "Screenshot of Frontend AppConfig file"
+            },
+            {
+                "subtitle": "Frontend Csrf Service",
+                "html": "🔐 The <span className='bold-text'>CsrfTokenService</span> class handles <a className='bold-text' href='https://brightsec.com/blog/csrf-token/' target='_blank' rel='noreferrer'>CSRF token</a> management by <span className='bold-text'>securely requesting</span> and <span className='bold-text'>storing the token</span> in a <a className='bold-text' href='https://en.wikipedia.org/wiki/HTTP_cookie' target='_blank' rel='noreferrer'>cookie</a>. The <span className='bold-text'>storeCsrfTokenInCookie</span> method <span className='bold-text'>fetches the token</span> from the <span className='bold-text'>server</span> and saves it as <span className='bold-text'>`XSRF-TOKEN`</span> in the <span className='bold-text'>browser's cookies</span>. The <span className='bold-text'>retrieveCsrfTokenFromCookie</span> method <span className='bold-text'>retrieves this token</span> for use in <span className='bold-text'>future requests</span>. This service ensures <a className='bold-text' href='https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html' target='_blank' rel='noreferrer'>CSRF protection</a> by integrating <span className='bold-text'>secure token handling</span> into the <span className='bold-text'>application's workflow</span>.",
+                "imageSrc": metadataFetcherFrontendCsrfServiceSrc,
+                "imageAlt": "Screenshot of Frontend CsrfService file"
+            },
+            {
+                "subtitle": "Backend App File",
+                "html": "This <span className='bold-text'>App</span> class of backend configures and launches the <a className='bold-text' href='https://www.geeksforgeeks.org/express-js/' target='_blank' rel='noreferrer'>Express server</a>. <span className='bold-text'>App</span>Security is a priority: <a className='bold-text' href='https://dev.to/codexam/how-to-use-helmetjs-to-secure-your-nodejs-express-app-4b1' target='_blank' rel='noreferrer'>helmet()</a> <span className='bold-text'>sets security headers</span>, <a className='bold-text' href='https://expressjs.com/en/resources/middleware/cookie-parser.html' target='_blank' rel='noreferrer'>cookieParser()</a> <span className='bold-text'>handles cookies</span>, and <span className='bold-text'>csrfProtectionMiddleware.protect</span> activates <a className='bold-text' href='https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html' target='_blank' rel='noreferrer'>CSRF protection</a>. <a className='bold-text' href='https://phapi.github.io/blog/cors-and-rate-limiting/' target='_blank' rel='noreferrer'>CORS and rate limiting</a> ensure <span className='bold-text'>secure communication</span>. The server <span className='bold-text'>parses JSON, logs requests, validates URLs,</span> and <span className='bold-text'>handles data</span> and <span className='bold-text'>CSRF token routes</span>. <span className='bold-text'>Error handling is comprehensive</span>, <span className='bold-text'>covering both 404</span> and <span className='bold-text'>catch-all cases</span>.",
+                "imageSrc": metadataFetcherBackendAppFileSrc,
+                "imageAlt": "Screenshot of Backend App File"
+            },
+            {
+                "subtitle": "Backend App Config",
+                "html": "✋ The <span className='bold-text'>AppConfig</span> class centralizes configuration settings for the application. It defines the environment (development or production), sets the default port to 4000, and configures <a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS' target='_blank' rel='noreferrer'>CORS</a> for secure <a className='bold-text' href='https://en.wikipedia.org/wiki/Cross-origin_resource_sharing' target='_blank' rel='noreferrer'>cross-origin</a> requests. It also implements <span className='bold-text'>rate limiting</span>, restricting each <span className='bold-text'>IP to 5 requests</span> per second, preventing abuse. This configuration balances <span className='bold-text'>security</span> and <span className='bold-text'>performance</span>.",
+                "imageSrc": metadataFetcherBackendAppConfigSrc,
+                "imageAlt": "Screenshot of Backend AppConfig file"
+            },
+            {
+                "subtitle": "Csrf Middleware",
+                "html": "🔐 The <span className='bold-text'>CsrfProtectionMiddleware</span> class <span className='bold-text'>enhances security</span> by applying <a className='bold-text' href='https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html' target='_blank' rel='noreferrer'>CSRF protection</a> to incoming requests. It sets a <a className='bold-text' href='https://brightsec.com/blog/csrf-token/' target='_blank' rel='noreferrer'>CSRF token</a> in the user's cookies, which is validated on subsequent requests. The middleware uses <span className='bold-text'>secure cookies (httpOnly and secure flags)</span> to prevent <a className='bold-text' href='https://owasp.org/www-community/attacks/xss/' target='_blank' rel='noreferrer'>cross-site attacks (XSS)</a>, while the <span className='bold-text'>sameSite: 'none'</span> setting enables <span className='bold-text'>cross-origin requests</span>. This implementation strengthens <span className='bold-text'>application security</span> by <span className='bold-text'>ensuring all requests</span> are verified, <span className='bold-text'>minimizing vulnerabilities</span> in <span className='bold-text'>production environments</span>.",
+                "imageSrc": metadataFetcherCsrfMiddlewareSrc,
+                "imageAlt": "Screenshot of Csrf Middleware"
+            },
+            {
+                "subtitle": "Urls Middleware",
+                "html": "The <span className='bold-text'>UrlValidationMiddleware</span> class ensures the <span className='bold-text'>validity</span> of incoming URLs. The <span className='bold-text'>validateUrls</span> middleware checks if the request contains at least 3 URLs, <span className='bold-text'>verifies</span> no duplicates exist, and ensures each URL follows a <span className='bold-text'>secure https:// format</span>. It uses <a className='bold-text' href='https://en.wikipedia.org/wiki/Regular_expression' target='_blank' rel='noreferrer'>regular expressions</a> and <span className='bold-text'>custom error</span> handling (MissingUrlError, DuplicateUrlsError, InvalidUrlError) to enforce <span className='bold-text'>strict validation</span>. If all criteria are met, the middleware proceeds to the next step, <span className='bold-text'>securing the data flow</span> in the application.",
+                "imageSrc": metadataFetcherUrlsMiddlewareSrc,
+                "imageAlt": "Screenshot of Urls Middleware"
+            },
+            {
+                "subtitle": "Data Controller",
+                "html": "The <span className='bold-text'>DataController</span> class manages <span className='bold-text'>metadata fetching</span> routes using an <a className='bold-text' href='https://expressjs.com/en/guide/routing.html' target='_blank' rel='noreferrer'>Express router</a>. It registers a <span className='bold-text'>POST</span> route to handle <span className='bold-text'>metadata requests</span>, processing a list of URLs. The <span className='bold-text'>getMetadata</span> method <span className='bold-text'>streams</span> the metadata chunk by chunk for <span className='bold-text'>optimal performance</span>. It sets the <span className='bold-text'>response headers</span> for <span className='bold-text'>JSON</span> and <a className='bold-text' href='https://en.wikipedia.org/wiki/Chunked_transfer_encoding' target='_blank' rel='noreferrer'>chunked transfer encoding</a>, building a <span className='bold-text'>JSON</span> array as metadata is fetched.",
+                "imageSrc": metadataFetcherDataControllerSrc,
+                "imageAlt": "Screenshot of Data Controller"
+            },
+            {
+                "subtitle": "Dynamically Json",
+                "html": "The <span className='bold-text'>DataService</span> class is responsible for <span className='bold-text'>fetching</span> and <span className='bold-text'>processing metadata</span> from various URLs. The <span className='bold-text'>fetchMetadata</span> method retrieves data using <a className='bold-text' href='https://axios-http.com/docs/intro' target='_blank' rel='noreferrer'>Axios</a> and returns a <span className='bold-text'>MetadataModel</span> that organizes metadata items. The <span className='bold-text'>extractFromJson</span> method <span className='bold-text'>dynamically handles different response structures</span>, extracting key fields such as title, description, and image URL. Using <a className='bold-text' href='https://www.npmjs.com/package/lodash' target='_blank' rel='noreferrer'>Lodash's</a> get method, the service efficiently retrieves <a className='bold-text' href='https://satoricyber.com/glossary/data-nesting' target='_blank' rel='noreferrer'>nested data</a>, ensuring <span className='bold-text'>flexibility</span> and <span className='bold-text'>secure handling</span> of <span className='bold-text'>diverse data formats</span>.",
+                "imageSrc": metadataFetcherDynamicallyJsonSrc,
+                "imageAlt": "Json Dynamically functions"
+            },
+            {
+                "subtitle": "Backend Tests",
+                "html": "🧪 The backend <a className='bold-text' href='https://youtu.be/c9g-DyKMUFk' target='_blank' rel='noreferrer'>Unit tests</a> are essential for ensuring the backend's <span className='bold-text'>stability</span> and <span className='bold-text'>security</span>. This test suite <span className='bold-text'>verifies core functionalities</span>, such as <span className='bold-text'>retrieving</span> and using <span className='bold-text'>CSRF tokens</span>, sending <span className='bold-text'>valid POST requests</span>, and <span className='bold-text'>handling errors</span> when requirements aren't met. These tests help <span className='bold-text'>maintain code integrity</span> and protect against <span className='bold-text'>security risks</span>, while ensuring that the application responds correctly to various input scenarios. Thorough testing reinforces trust in the <span className='bold-text'>system’s reliability</span>.",
+                "imageSrc": metadataFetcherBackendTestsSrc,
+                "imageAlt": "Screenshot of Backend Tests file"
+            },
+            {
+                "subtitle": "Frontend Tests",
+                "html": "🧪 These <span className='bold-text'>frontend tests</span> are essential for ensuring the <span className='bold-text'>FetchDataResult</span> component correctly handles various data states, from empty metadata results to populated metadata items. By simulating different scenarios, such as no metadata or a table of metadata items, the <span className='bold-text'>tests verify</span> that the component <span className='bold-text'>behaves as expected</span>, displaying appropriate messages or rendering content correctly. This ensures the component delivers a consistent and accurate <span className='bold-text'>user experience</span>, regardless of the data state.",
+                "imageSrc": metadataFetcherFrontendTestsSrc,
+                "imageAlt": "Screenshot of Frontend Tests file"
+            },
+            {
+                "subtitle": "Deploying Full Stack to Render",
+                "html": "🖥️ Deploying the website to <a className='bold-text' href='https://render.com/' target='_blank' rel='noreferrer'>Render</a> required several adjustments. After launching the backend, I encountered <span className='bold-text'>issues with data flow.</span> Some responses included extra commas or missing brackets <span className='bold-text'>(which didn’t happen during development).</span> To fix this, I <span className='bold-text'>reprocessed the incoming data</span> on the frontend using the <a className='bold-text' href='https://www.npmjs.com/package/jsonrepair' target='_blank' rel='noreferrer'>jsonrepair</a> library. Once everything was corrected, I also <span className='bold-text'>successfully deployed the frontend</span>, ensuring a <span className='bold-text'>seamless integration</span> between both components.",
+                "imageSrc": metadataFetcherRenderSrc,
+                "imageAlt": "Screenshot of Render website"
+            }
         ]
     },
     {
-        id: 5,
+        id: 2,
+        name: "AI Model",
+        links: {
+            repositoryLink: "",
+            liveLink: ""
+        },
+        projectRoute: {
+            route: "/portfolio/ai-model",
+            icon: <TipsAndUpdates sx={AppComponentsStyle.headerRouteIcon} />
+        },
+        isFavorite: true,
+        paragraphs: []
+    },
+    {
+        id: 3,
         name: "Vacations",
-        github: {
+        links: {
             repositoryLink: "https://github.com/ItamarBenAri/Vacations"
         },
         projectRoute: {
@@ -420,9 +316,9 @@ export const myProjects: ProjectModel[] = [
         ]
     },
     {
-        id: 6,
+        id: 4,
         name: "My Portfolio",
-        github: {
+        links: {
             repositoryLink: "https://github.com/ItamarBenAri/my-portfolio",
             liveLink: "https://itamar-ben-ari.com"
         },
@@ -470,9 +366,230 @@ export const myProjects: ProjectModel[] = [
         ]
     },
     {
+        id: 5,
+        name: "Singer Portfolio",
+        links: {
+            repositoryLink: "https://github.com/ItamarBenAri/Singer-Portfolio",
+            liveLink: "https://itamarbenari.github.io/Singer-Portfolio/"
+        },
+        projectRoute: {
+            route: "/portfolio/singer-portfolio",
+            icon: <AudioFile sx={AppComponentsStyle.headerRouteIcon} />
+        },
+        isFavorite: true,
+        paragraphs: [
+            {
+                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Singer-Portfolio/' target='_blank' rel='noreferrer'>This website</a> was created for a good friend of mine, a singer-songwriter, with the <span className='bold-text'>frontend</span> developed using <a className='bold-text' href='https://react.dev/' target='_blank' rel='noreferrer'>React</a>. <span className='bold-text'>Leveraging the advancements</span> in <span className='bold-text'>AI</span> and <span className='bold-text'>chat technology</span>, I experimented with building a website primarily using <span className='bold-text'>prompts</span> fed into <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a>. The result is in front of you, and I think it turned out quite well. However, working with <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> had its challenges. It sometimes generated code that caused compilation errors, and when I tried to fix them, it often repeated the same mistakes. Ultimately, I had to roll up my sleeves, investigate the bugs, and resolve them myself🐞.",
+                "imageSrc": singerPortfolioIntroSrc,
+                "imageAlt": "Screenshot of Singer Portfolio Website"
+            },
+            {
+                "subtitle": "Code",
+                "html": "🤖 The code written by <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> was <span className='bold-text'>quite clear</span>. Most of it was structured with <span className='bold-text'>HTML</span> and styled using <span className='bold-text'>CSS</span>. Even when multiple components had the same design but different content, it repeated them as <span className='bold-text'>HTML</span> was traditionally written. For <span className='bold-text'>animations</span>, <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> recommended the <a className='bold-text' href='https://michalsnik.github.io/aos/' target='_blank' rel='noreferrer'>AOS</a> library, which did an excellent job making the website <span className='bold-text'>look attractive</span>.",
+                "imageSrc": singerPortfolioCodeSrc,
+                "imageAlt": "html of the printing"
+            },
+            {
+                "subtitle": "Device Frame",
+                "html": "📱 When I asked <a className='bold-text' href='https://openai.com/index/gpt-4/' target='_blank' rel='noreferrer'>GPT-4</a> to create a <span className='bold-text'>frame</span> for <span className='bold-text'>videos</span> to make them look like they were displayed on a phone, it either created a <span className='bold-text'>basic black frame</span> or designs that <span className='bold-text'>looked unprofessional</span> (Maybe it's my prompts🤷‍♂️). So, I used the <a className='bold-text' href='https://www.npmjs.com/package/react-device-frameset' target='_blank' rel='noreferrer'>react-device-frameset</a> library, which offers <span className='bold-text'>attractive</span> and <span className='bold-text'>appropriate designs</span>. However, from my experience, the <span className='bold-text'>responsiveness</span> of their frames wasn't very effective.",
+                "imageSrc": singerPortfolioDeviceSrc,
+                "imageAlt": "html of the printing"
+            },
+        ]
+    },
+    {
+        id: 6,
+        name: "Massage",
+        links: {
+            repositoryLink: "https://github.com/ItamarBenAri/Massage",
+            liveLink: "https://itamarbenari.github.io/Massage/"
+        },
+        projectRoute: {
+            route: "/portfolio/massage",
+            icon: <Spa sx={AppComponentsStyle.headerRouteIcon} />
+        },
+        paragraphs: [
+            {
+                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Massage/' target='_blank' rel='noreferrer'>This</a> is one of the <span className='bold-text'>frontend</span> projects I truly enjoyed working on. Built with <a className='bold-text' href='https://react.dev/' target='_blank' rel='noreferrer'>React</a>, it includes a <span className='bold-text'>.env</span> file for configuration. The project was for a client who needed a <span className='bold-text'>Hebrew website</span> for <span className='bold-text'>various massage services</span>, with a <span className='bold-text'>contact form</span> and <span className='bold-text'>accessibility features</span>. The website is mainly designed with <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> for enhanced <span className='bold-text'>responsiveness</span> and <span className='bold-text'>accessibility</span>, and it’s <span className='bold-text'>optimized</span> for both desktop and mobile devices.",
+                "imageSrc": massageIntroSrc,
+                "imageAlt": "Screenshot of Massage Website"
+            },
+            {
+                "subtitle": "Architecture",
+                "html": "One of the key lessons I learned from this project was how to build its <a className='bold-text' href='https://star-knowledge.com/blog/web-application-architecture-types-components-models/#:~:text=Web%20application%20architecture%20is%20the,the%20data%20to%20the%20user.' target='_blank' rel='noreferrer'>architecture</a> correctly. To <span className='bold-text'>optimize long-term maintenance</span> and <span className='bold-text'>improvement</span>, I placed each component in its own folder and sometimes further divided these into additional files, as shown in the image. A well-planned project is more enjoyable and <span className='bold-text'>easier to maintain😁</span>.",
+                "imageSrc": massageArchitectureSrc,
+                "imageAlt": "Describe project architecture"
+            },
+            {
+                "subtitle": "Constants",
+                "html": "All medical treatment information on the site is stored in a <span className='bold-text'>constants folder</span> within the src directory, and is exported for use elsewhere in the application. This setup makes it <span className='bold-text'>easier to maintain the treatment data</span> and simulates data coming from a <a className='bold-text' href='https://docs.duendesoftware.com/identityserver/v7/bff/apis/remote/#:~:text=A%20Remote%20API%20is%20an,requests%20to%20remote%20APIs%20directly.' target='_blank' rel='noreferrer'>remote API</a>.",
+                "imageSrc": massageConstantsSrc,
+                "imageAlt": "Code of therapies data"
+            },
+            {
+                "subtitle": "Models",
+                "html": "The <a className='bold-text' href='https://www.typescriptlang.org/docs/handbook/classes.html' target='_blank' rel='noreferrer'>models</a> shown in the image were created to <span className='bold-text'>safeguard against incorrect or erroneous data during code maintenance</span>. Defining these <span className='bold-text'>models</span> provides <span className='bold-text'>protection against unexpected errors</span>, making it easier to trace their origins and ensuring more <span className='bold-text'>robust</span> and <span className='bold-text'>reliable code management</span>💪.",
+                "imageSrc": massageModelsSrc,
+                "imageAlt": "Code of MassageModel class and TherapyModel class"
+            },
+            {
+                "subtitle": "Theme",
+                "html": "The AppComponentsStyle class was created to separate design elements from the <a className='bold-text' href='https://legacy.reactjs.org/docs/introducing-jsx.html' target='_blank' rel='noreferrer'>JSX</a> component files. Since <span className='bold-text'>CSS</span> files don't support styling <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> components, I developed a <a className='bold-text' href='https://mui.com/customization/theming/' target='_blank' rel='noreferrer'>theme</a> to handle this. This approach keeps <span className='bold-text'>styling</span> objects separate from <a className='bold-text' href='https://legacy.reactjs.org/docs/introducing-jsx.html' target='_blank' rel='noreferrer'>JSX</a> files, creating <span className='bold-text'>static design objects</span> at the application level, accessible throughout the project. This approach ensures a <span className='bold-text'>cleaner</span>, more <span className='bold-text'>maintainable codebase✨</span>.",
+                "imageSrc": massageThemeSrc,
+                "imageAlt": "Code of Theme class"
+            },
+            {
+                "subtitle": "Secret Variables",
+                "html": "🔐 The following code, located in the <span className='bold-text'>Utils</span> folder within src, centralizes <span className='bold-text'>environment variables</span>, enhancing <span className='bold-text'>maintainability</span>, <span className='bold-text'>security</span>, and <span className='bold-text'>organization</span>. By encapsulating keys for <a className='bold-text' href='https://www.google.com/recaptcha/about/' target='_blank' rel='noreferrer'>reCAPTCHA</a> and <a className='bold-text' href='https://www.emailjs.com/' target='_blank' rel='noreferrer'>EmailJS</a> in an AppConfig class, it ensures these <span className='bold-text'>sensitive values</span> are easily managed and accessed throughout the application while keeping them <span className='bold-text'>secure</span> by not hardcoding them directly. This approach promotes a <span className='bold-text'>cleaner</span>, more <span className='bold-text'>secure codebase</span>.",
+                "imageSrc": massageSecretVarsSrc,
+                "imageAlt": "Code of secret variables in AppConfig file"
+            },
+            {
+                "subtitle": "Git",
+                "html": "This is the first project I deployed to <a className='bold-text' href='https://pages.github.com/' target='_blank' rel='noreferrer'>GitHub Pages</a> using <span className='bold-text'>secret variables</span>, a new area I explored related to <a className='bold-text' href='https://aws.amazon.com/devops/what-is-devops/#:~:text=DevOps%20is%20the%20combination%20of,development%20and%20infrastructure%20management%20processes.' target='_blank' rel='noreferrer'>DevOps</a>. After learning and several trial-and-error attempts, I <span className='bold-text'>enjoyed</span> overcoming the challenge, <span className='bold-text'>discovering</span> new things, and <span className='bold-text'>securely deploying</span> the website to <a className='bold-text' href='https://pages.github.com/' target='_blank' rel='noreferrer'>GitHub Pages</a>.",
+                "imageSrc": massageGitSrc,
+                "imageAlt": "Code of yml file file"
+            },
+            {
+                "subtitle": "Cards",
+                "html": "The massage treatment <span className='bold-text'>cards</span> are <span className='bold-text'>dynamic</span> and <span className='bold-text'>interactive</span>. When a user hovers over them, the card flips to reveal treatment prices and a call button for contacting the therapist. The design and animations are crafted entirely with <span className='bold-text'>CSS</span> from <a className='bold-text' href='https://uiverse.io/joe-watson-sbf/little-goat-24' target='_blank' rel='noreferrer'>this website</a>, providing a <span className='bold-text'>seamless</span> and <span className='bold-text'>professional</span> user experience.",
+                "imageSrc": massageCardsSrc,
+                "imageAlt": "Screenshot of Medical Cards from Website"
+            },
+            {
+                "subtitle": "Contact Us",
+                "html": "When the <span className='bold-text'>contact form</span> is displayed, the <span className='bold-text'>submit button</span> is <span className='bold-text'>disabled</span> until the user <span className='bold-text'>verifies</span> they are human via <a className='bold-text' href='https://www.google.com/recaptcha/about/' target='_blank' rel='noreferrer'>Google's reCAPTCHA</a>. Even after <span className='bold-text'>verification</span>, if the user tries to submit the form with incorrect details, the form will not submit. Instead, an <span className='bold-text'>error message</span> will be shown, and focus will be <span className='bold-text'>directed</span> to the field with the error. This <span className='bold-text'>functionality</span> is supported by the <a className='bold-text' href='https://react-hook-form.com/' target='_blank' rel='noreferrer'>react-hook-form</a> library.",
+                "imageSrc": massageContactUsSrc,
+                "imageAlt": "Screenshot of Contact Us form from Website"
+            },
+            {
+                "subtitle": "Contact Us Validation Code",
+                "html": "All <span className='bold-text'>validation objects</span>, including <a className='bold-text' href='https://regexr.com/' target='_blank' rel='noreferrer'>regex</a> for <span className='bold-text'>text field</span>, are contained within a single class. These <span className='bold-text'>objects</span> are <span className='bold-text'>static</span>, meaning they <span className='bold-text'>load only once at the project level</span>, ensuring <span className='bold-text'>efficient</span> and <span className='bold-text'>consistent validation</span> across the application.",
+                "imageSrc": massageValidationCodeSrc,
+                "imageAlt": "Code of validation class"
+            },
+            {
+                "subtitle": "Text Field",
+                "html": "The files form an efficient and maintainable <span className='bold-text'>contact form</span> using <a className='bold-text' href='https://mui.com/' target='_blank' rel='noreferrer'>MUI</a> components and <a className='bold-text' href='https://react-hook-form.com/' target='_blank' rel='noreferrer'>React Hook Form</a>. The ContactUsTextField component wraps <a className='bold-text' href='https://mui.com/material-ui/react-text-field/' target='_blank' rel='noreferrer'>MUI's TextField</a>, adding <span className='bold-text'>validation logic</span>. This separation makes the <span className='bold-text'>code modular</span> and <span className='bold-text'>easier to maintain</span>, with validation and styling handled outside the main component logic. The ContactUsForm component uses <a className='bold-text' href='https://react-hook-form.com/docs/formprovider' target='_blank' rel='noreferrer'>FormProvider</a> for <span className='bold-text'>global form state</span> management. Separating the <a className='bold-text' href='https://mui.com/material-ui/react-text-field/' target='_blank' rel='noreferrer'>TextField</a> and using <a className='bold-text' href='https://react-hook-form.com/docs/formprovider' target='_blank' rel='noreferrer'>FormProvider</a> ensures <span className='bold-text'>clean</span>, <span className='bold-text'>maintainable</span>, and <span className='bold-text'>reusable code</span>.",
+                "imageSrc": massageTextFieldSrc,
+                "imageAlt": "Code of Text Field components"
+            },
+            {
+                "subtitle": "Copyrights",
+                "html": "©️ The <span className='bold-text'>copyright</span> section is fully styled using <a className='bold-text' href='https://mui.com/material-ui/getting-started/templates/sticky-footer/' target='_blank' rel='noreferrer'>MUI</a>, ensuring it is <span className='bold-text'>responsive</span> and <span className='bold-text'>accessible</span>. As shown, there's also an <span className='bold-text'>upward arrow button</span> that, when clicked, <span className='bold-text'>scrolls the page to the top</span> for <span className='bold-text'>user convenience</span>.",
+                "imageSrc": massageCopyrightsSrc,
+                "imageAlt": "Screenshots of responsive copyrights section from Website"
+            },
+        ]
+    },
+    {
         id: 7,
+        name: "Crypto Currencies",
+        links: {
+            repositoryLink: "https://github.com/ItamarBenAri/Online-Crypto-Currencies",
+            liveLink: "https://itamarbenari.github.io/Online-Crypto-Currencies/"
+        },
+        projectRoute: {
+            route: "/portfolio/online-crypto-currencies",
+            icon: <CurrencyBitcoin sx={AppComponentsStyle.headerRouteIcon} />
+        },
+        paragraphs: [
+            {
+                "html": "<a className='bold-text' href='https://itamarbenari.github.io/Online-Crypto-Currencies/' target='_blank' rel='noreferrer'>This project</a> is one of my early works, built with <a className='bold-text' href='https://medium.com/@supraja_miryala/es6-vs-native-javascript-939533a4e1b2#:~:text=%E2%80%9CNative%E2%80%9D%20in%20JavaScript%20typically%20refers%20to%20features%20or%20functionalities%20that,provided%20by%20the%20language%20itself.' target='_blank' rel='noreferrer'>native JavaScript</a>. It <span className='bold-text'>dynamically injects</span> elements into and uses <a className='bold-text' href='https://getbootstrap.com/' target='_blank' rel='noreferrer'>Bootstrap</a> for enhanced <span className='bold-text'>responsiveness</span> and <span className='bold-text'>accessibility</span>. The project displays <span className='bold-text'>popular cryptocurrencies</span> and tracks their <span className='bold-text'>real-time prices</span> using <a className='bold-text' href='https://canvasjs.com/' target='_blank' rel='noreferrer'>CanvasJS</a> Chart. A key focus was on <span className='bold-text'>proper function decomposition</span>, ensuring <span className='bold-text'>each function performs a single task</span>.",
+                "imageSrc": onlineCryptoCurrenciesIntroSrc,
+                "imageAlt": "Screenshot of Online Crypto Currencies Website"
+            },
+            {
+                "subtitle": "HTML",
+                "html": "As seen in the image, the <span className='bold-text'>HTML</span> contains only three elements. In line with the project goals, the entire site is <span className='bold-text'>dynamically rendered</span> by the <span className='bold-text'>JavaScript</span> file, not through <span className='bold-text'>static HTML</span>.",
+                "imageSrc": onlineCryptoCurrenciesHtmlSrc,
+                "imageAlt": "Screenshot of the HTML"
+            },
+            {
+                "subtitle": "Coins",
+                "html": "🪙 Clicking on HOME in the menu <span className='bold-text'>fetches</span> cryptocurrencies from an <a className='bold-text' href='https://en.wikipedia.org/wiki/API' target='_blank' rel='noreferrer'>API</a> and displays them to the user. The user can select up to 5 coins to track their <span className='bold-text'>real-time prices</span> on the Reports page. Clicking on More Info shows the coin's price in USD, EUR, and ILS.",
+                "imageSrc": onlineCryptoCurrenciesCoinsSrc,
+                "imageAlt": "Website coins"
+            },
+            {
+                "subtitle": "Get From Api",
+                "html": "This was my first time <span className='bold-text'>fetching data</span> from a specific server. I learned the importance of using <span className='bold-text'>await</span> and <span className='bold-text'>incorporating try-catch</span> for handling <span className='bold-text'>asynchronous operations</span>. Additionally, I gained insights into how <span className='bold-text'>JavaScript</span> manages the <a className='bold-text' href='http://latentflip.com/loupe/?code=!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D' target='_blank' rel='noreferrer'>Call Stack</a>.",
+                "imageSrc": onlineCryptoCurrenciesGetFromApiSrc,
+                "imageAlt": "Code of get api"
+            },
+            {
+                "subtitle": "Modal",
+                "html": "When the user selects more than five currencies, a modal pops up asking which currency to remove to add the sixth one. If the user clicks the 'X' or the 'Done' button, the sixth currency will not be added.",
+                "imageSrc": onlineCryptoCurrenciesModalSrc,
+                "imageAlt": "Website modal"
+            },
+            {
+                "subtitle": "CanvasJS Chart",
+                "html": "The <span className='bold-text'>responsive</span> <a className='bold-text' href='https://canvasjs.com/' target='_blank' rel='noreferrer'>CanvasJS</a> chart displays cryptocurrency prices in <span className='bold-text'>real-time</span>, updated every second. This feature ensures users have the most current data on their chosen currencies. By presenting prices in USD, the chart offers a <span className='bold-text'>clear</span> and <span className='bold-text'>accessible</span> way to monitor market trends. This <span className='bold-text'>dynamic</span> approach highlights the project's focus on <span className='bold-text'>real-time data visualization</span> and <span className='bold-text'>user engagement</span>.",
+                "imageSrc": onlineCryptoCurrenciesCanvasJSChartSrc,
+                "imageAlt": "Website CanvasJS Chart"
+            },
+            {
+                "subtitle": "More Info",
+                "html": "To <span className='bold-text'>optimize</span> the website and <span className='bold-text'>fetch data</span> from the server only when necessary, a function runs when the user clicks 'More Info'. This function checks if the currency data exists in <span className='bold-text'>localStorage</span>. If it does, the data is displayed immediately. If not, a <span className='bold-text'>server request</span> is made, and the data is <span className='bold-text'>stored in localStorage</span> for 2 minutes to <span className='bold-text'>reduce unnecessary server requests</span> and enhance the <span className='bold-text'>user experience</span>.",
+                "imageSrc": onlineCryptoCurrenciesMoreInfoSrc,
+                "imageAlt": "Code of 'more info' function"
+            },
+            {
+                "subtitle": "Search",
+                "html": "🔍 After consulting with several developers, I decided to implement a <a className='bold-text' href='https://medium.com/@AlexanderObregon/how-to-build-a-dynamic-search-feature-with-javascript-filters-464b97038be1' target='_blank' rel='noreferrer'>dynamic search feature</a>. This means that as users type or delete characters, the matching currencies are <span className='bold-text'>displayed in real-time</span>, unlike traditional search methods that require pressing enter or clicking a button. This approach enhances the <span className='bold-text'>user experience</span> by providing instant feedback.",
+                "imageSrc": onlineCryptoCurrenciesSearchSrc,
+                "imageAlt": "Website search example"
+            },
+            {
+                "subtitle": "Parallax",
+                "html": "The website <span className='bold-text'>background features</span> a subtle <a className='bold-text' href='https://webflow.com/blog/parallax-scrolling' target='_blank' rel='noreferrer'>parallax</a> effect, enhancing the <span className='bold-text'>visual appeal</span> and <span className='bold-text'>user experience</span>. The code of the <a className='bold-text' href='https://webflow.com/blog/parallax-scrolling' target='_blank' rel='noreferrer'>parallax</a> adjusts the <span className='bold-text'>background position</span> based on the <span className='bold-text'>scroll speed</span>, creating a <a className='bold-text' href='https://gsap.com/community/forums/topic/37236-how-to-achieve-smooth-parallax-effect-with-scrolltrigger-and-snap-scroll/' target='_blank' rel='noreferrer'>smooth parallax scrolling effect</a>.",
+                "imageSrc": onlineCryptoCurrenciesParallaxSrc,
+                "imageAlt": "Code of the parallax"
+            },
+        ]
+    },
+    {
+        id: 8,
+        name: "Weather Now",
+        links: {
+            repositoryLink: "https://github.com/ItamarBenAri/Weather-Now",
+            liveLink: "https://itamarbenari.github.io/Weather-Now/"
+        },
+        projectRoute: {
+            route: "/portfolio/weather-now",
+            icon: <Thunderstorm sx={AppComponentsStyle.headerRouteIcon} />
+        },
+        paragraphs: [
+            {
+                "html": "☁️ <a className='bold-text' href='https://itamarbenari.github.io/Weather-Now/' target='_blank' rel='noreferrer'>This</a> is one of the first projects I created to <span className='bold-text'>add value to the community</span>. It was my first time learning how to use an <a className='bold-text' href='https://www.fortinet.com/resources/cyberglossary/api-key#:~:text=API%20Keys%20Definition%20and%20Meaning,authenticate%20an%20application%20or%20user.' target='_blank' rel='noreferrer'>API key</a>. Built with <a className='bold-text' href='https://medium.com/@supraja_miryala/es6-vs-native-javascript-939533a4e1b2#:~:text=%E2%80%9CNative%E2%80%9D%20in%20JavaScript%20typically%20refers%20to%20features%20or%20functionalities%20that,provided%20by%20the%20language%20itself.' target='_blank' rel='noreferrer'>native JavaScript</a>, the Frontend project displays <span className='bold-text'>weather information</span> based on the city entered by the user. Designed with <a className='bold-text' href='https://getbootstrap.com/' target='_blank' rel='noreferrer'>Bootstrap</a>, the <span className='bold-text'>weather data</span> is provided by the <a className='bold-text' href='https://www.weatherapi.com/' target='_blank' rel='noreferrer'>Weather API</a>.",
+                "imageSrc": weatherNowWeatherSrc,
+                "imageAlt": "Screenshot of Weather Now Website"
+            },
+            {
+                "subtitle": "IIFE",
+                "html": "In this project, I learned to use <a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Glossary/IIFE' target='_blank' rel='noreferrer'>IIFE</a> (<span className='bold-text'>Immediately Invoked Function Expression</span>) and the '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode' target='_blank' rel='noreferrer'>use strict</a>' <span className='bold-text'>directive in JavaScript</span>. An <a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Glossary/IIFE' target='_blank' rel='noreferrer'>IIFE</a> helps to create a <span className='bold-text'>local scope</span> and <span className='bold-text'>avoid polluting the global namespace</span>. The '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode' target='_blank' rel='noreferrer'>use strict</a>' directive enforces <span className='bold-text'>stricter parsing</span> and <span className='bold-text'>error handling</span> in the code, making it <span className='bold-text'>more robust</span> and <span className='bold-text'>less error-prone💪</span>.",
+                "imageSrc": weatherNowIIFESrc,
+                "imageAlt": "Code of IIFE and 'use strict'"
+            },
+            {
+                "subtitle": "API",
+                "html": "🔐 Yes yes, I know it's not secure to <a className='bold-text' href='https://escape.tech/blog/how-to-secure-api-secret-keys/' target='_blank' rel='noreferrer'>expose an API key publicly</a>, and this was the first and last time I did it. My focus was on <span className='bold-text'>proper function decomposition</span>, ensuring <span className='bold-text'>each function performs a single logical task</span>, as demonstrated in the image.",
+                "imageSrc": weatherNowMainFunctionSrc,
+                "imageAlt": "Code of API fetching"
+            },
+            {
+                "subtitle": "Input Error",
+                "html": "👎 As shown in the image, when a user enters a <span className='bold-text'>non-existent city</span>, a '<a className='bold-text' href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400' target='_blank' rel='noreferrer'>Bad Request 400</a>' error is <span className='bold-text'>logged to the console</span>. The application then <span className='bold-text'>displays a clear message to the user</span>, informing them of the invalid input. This error handling ensures users are aware of mistakes and can correct their entries.",
+                "imageSrc": weatherNowSearchErrorSrc,
+                "imageAlt": "Screenshot from the website of error when city not found"
+            },
+        ]
+    },
+    {
+        id: 9,
         name: "Online Music Alarm",
-        github: {
+        links: {
             repositoryLink: "https://github.com/ItamarBenAri/Online-Music-Alarm",
             liveLink: "https://itamarbenari.github.io/Online-Music-Alarm/"
         },
@@ -513,9 +630,9 @@ export const myProjects: ProjectModel[] = [
         ]
     },
     {
-        id: 8,
+        id: 10,
         name: "Todo Board",
-        github: {
+        links: {
             repositoryLink: "https://github.com/ItamarBenAri/Todo-Board",
             liveLink: "https://itamarbenari.github.io/Todo-Board/"
         },
@@ -554,5 +671,5 @@ export const myProjects: ProjectModel[] = [
                 "imageAlt": "Archive section in the Todo Board website"
             },
         ]
-    },
+    }
 ];

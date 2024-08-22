@@ -72,6 +72,21 @@ import myPortfolioDataSrc from "../Assets/Images/MyPortfolio/data.png";
 import myPortfolioModelSrc from "../Assets/Images/MyPortfolio/model.png";
 import myPortfolioHomePageSrc from "../Assets/Images/MyPortfolio/homePage.png";
 import myPortfolioProjectPageSrc from "../Assets/Images/MyPortfolio/projectPage.png";
+import metadataFetcherIntroSrc from "../Assets/Images/MetadataFetcher/intro.png";
+import metadataFetcherFrontValidationSrc from "../Assets/Images/MetadataFetcher/frontValidation.png";
+import metadataFetcherResultsSrc from "../Assets/Images/MetadataFetcher/results.png";
+import metadataFetcherBackendAppConfigSrc from "../Assets/Images/MetadataFetcher/backendAppConfig.png";
+import metadataFetcherCsrfMiddlewareSrc from "../Assets/Images/MetadataFetcher/csrfMiddleware.png";
+import metadataFetcherUrlsMiddlewareSrc from "../Assets/Images/MetadataFetcher/urlsMiddleware.png";
+import metadataFetcherDataControllerSrc from "../Assets/Images/MetadataFetcher/dataController.png";
+import metadataFetcherFrontendTestsSrc from "../Assets/Images/MetadataFetcher/frontendTests.png";
+import metadataFetcherDynamicallyJsonSrc from "../Assets/Images/MetadataFetcher/dynamicallyJson.png";
+import metadataFetcherBackendAppFileSrc from "../Assets/Images/MetadataFetcher/backendAppFile.png";
+import metadataFetcherBackendTestsSrc from "../Assets/Images/MetadataFetcher/backendTests.png";
+import metadataFetcherFrontendCsrfServiceSrc from "../Assets/Images/MetadataFetcher/frontendCsrfService.png";
+import metadataFetcherFrontendMetadataServiceSrc from "../Assets/Images/MetadataFetcher/frontendMetadataService.png";
+import metadataFetcherFrontendAppConfigSrc from "../Assets/Images/MetadataFetcher/frontendAppConfig.png";
+import metadataFetcherRenderSrc from "../Assets/Images/MetadataFetcher/render.png";
 
 export {
     todoBoardIntroSrc,
@@ -148,4 +163,19 @@ export {
     myPortfolioModelSrc,
     myPortfolioHomePageSrc,
     myPortfolioProjectPageSrc,
+    metadataFetcherIntroSrc,
+    metadataFetcherFrontValidationSrc,
+    metadataFetcherResultsSrc,
+    metadataFetcherFrontendMetadataServiceSrc,
+    metadataFetcherFrontendAppConfigSrc,
+    metadataFetcherFrontendCsrfServiceSrc,
+    metadataFetcherBackendAppFileSrc,
+    metadataFetcherBackendAppConfigSrc,
+    metadataFetcherCsrfMiddlewareSrc,
+    metadataFetcherUrlsMiddlewareSrc,
+    metadataFetcherDataControllerSrc,
+    metadataFetcherDynamicallyJsonSrc,
+    metadataFetcherBackendTestsSrc,
+    metadataFetcherFrontendTestsSrc,
+    metadataFetcherRenderSrc,
 };
