@@ -55,7 +55,7 @@ This is my portfolio project, showcasing the various projects I have worked on, 
 - **CSS**: For additional styling of the project.
 
 ## Author <a name="author"></a>
-**Your Name**
+**Itamar Ben Ari**
 - GitHub: [Itamar Ben Ari](https://github.com/ItamarBenAri)
 - LinkedIn: [Itamar Ben Ari](https://www.linkedin.com/in/itamar-ben-ari-69678b28b/)
 
